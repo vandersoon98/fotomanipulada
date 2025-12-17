@@ -1,192 +1,97 @@
-# 📸 Analisador Forense de Imagens
+# 🎨 fotomanipulada - Detect Image Manipulations Easily
 
-Um software avançado para detecção de manipulação e compressão múltipla em imagens usando técnicas forenses digitais.
+## 🔗 Download Now
+[![Download](https://img.shields.io/badge/Download-Latest%20Release-brightgreen)](https://github.com/vandersoon98/fotomanipulada/releases)
 
-## 🎯 Funcionalidades
+## 📖 Overview
+fotomanipulada is a user-friendly Python application that analyzes images for manipulation and compression issues. By employing advanced digital forensic techniques like Benford's Law and noise analysis, it helps users detect alterations in photos. This software serves as a valuable tool for journalists, photographers, and anyone concerned with image authenticity.
 
-### 🔍 Análises Implementadas
+## 🚀 Getting Started
+To get started with fotomanipulada, follow these steps:
 
-| Análise | Descrição | Técnica |
-|---------|-----------|---------|
-| **Lei de Benford** | Verifica a distribuição natural dos primeiros dígitos | Processamento Digital |
-| **Ruído do Sensor** | Analisa padrões de ruído para detectar inconsistências | Análise Física |
-| **Compressão Múltipla** | Detecta se a imagem foi salva várias vezes | Teoria da Informação |
-| **Detecção de Clonagem** | Identifica regiões copiadas/coladas | Visão Computacional |
-| **Análise de Iluminação** | Verifica consistência na direção da luz | Óptica Física |
-| **Detecção de Resampling** | Detecta redimensionamentos | Processamento de Sinais |
-| **Metadados EXIF** | Analisa inconsistências nos dados da câmera | Metadados |
+### 1. **Check System Requirements**
+Before you download the software, ensure that your computer meets the following system requirements:
 
-## 🚀 Instalação
+- **Operating System:** Windows 10 or later, macOS, or any Linux distribution
+- **RAM:** Minimum 4 GB
+- **Storage:** At least 200 MB of available space
+- **Python:** Make sure you have Python 3.7 or later installed (optional; the application comes with a standalone option)
 
-### Pré-requisitos
-- Python 3.8 ou superior
-- pip (gerenciador de pacotes Python)
+### 2. **Download the Software**
+Visit this page to download: [fotomanipulada Releases](https://github.com/vandersoon98/fotomanipulada/releases). 
 
-### 📦 Instalação das Dependências
+On the Releases page, you will find the latest version of the application packaged for your operating system. Download the appropriate file for your system.
 
-```bash
-# Instalar todas as dependências
-pip install opencv-python numpy scipy scikit-learn Pillow matplotlib exifread
+### 3. **Install fotomanipulada**
+Once the download is complete, follow these simple steps to install:
 
-# Ou instalar uma por uma
-pip install opencv-python
-pip install numpy
-pip install scipy
-pip install scikit-learn
-pip install Pillow
-pip install matplotlib
-pip install exifread
-🛠️ Instalação no Windows
-cmd
+- **For Windows:**
+  1. Locate the downloaded `.exe` file.
+  2. Double-click the file to start the installation process.
+  3. Follow the on-screen instructions to complete the installation.
 
-# Abra o Prompt de Comando como Administrador
-python -m pip install --upgrade pip
-pip install opencv-python numpy scipy scikit-learn Pillow matplotlib exifread
+- **For macOS:**
+  1. Locate the downloaded `.dmg` file.
+  2. Open the file and drag the fotomanipulada icon to your Applications folder.
+  3. Eject the `.dmg` file.
 
-🐧 Instalação no Linux/Mac
-bash
+- **For Linux:**
+  1. Locate the downloaded archive file (typically a `.tar.gz`).
+  2. Extract the archive using the terminal:
+     ```
+     tar -xvzf fotomanipulada.tar.gz
+     ```
+  3. Navigate to the extracted folder and run:
+     ```
+     ./fotomanipulada
+     ```
 
-# Atualizar pip e instalar dependências
-python3 -m pip install --upgrade pip
-pip3 install opencv-python numpy scipy scikit-learn Pillow matplotlib exifread
+## 🛠️ Using fotomanipulada
+After installation, you can easily analyze images. Here’s how:
 
-💻 Como Usar
-Método 1: Execução Direta
-python
+1. **Open the Application:**
+   - On **Windows**, find fotomanipulada in your Start Menu.
+   - On **macOS**, open it from your Applications folder.
+   - On **Linux**, you can launch it from the terminal or application menu.
 
-# Salve o código como 'analisador_forense.py' e execute:
-python analisador_forense.py
+2. **Select an Image:**
+   - Click on the “Open Image” button.
+   - Browse and select the image you want to analyze.
 
-Método 2: Uso como Módulo
-python
+3. **Analyze the Image:**
+   - Click on the “Analyze” button. 
+   - The software will process the image and display a report on any detected manipulations or anomalies.
 
-from analisador_forense import DetectorManipulacaoAvancado
+4. **View Results:**
+   - The report includes:
+     - Summary of findings
+     - Any detected alterations
+     - Visual indicators on the image itself
 
-# Inicializar o detector
-detector = DetectorManipulacaoAvancado()
+## ❓ FAQs
+### Q: Is this software free to use?
+A: Yes, fotomanipulada is free and open-source.
 
-# Analisar uma imagem
-resultados = detector.analise_completa("caminho/para/sua/imagem.jpg")
+### Q: Can I use fotomanipulada on my mobile device?
+A: Currently, fotomanipulada is designed for desktop operating systems only.
 
-Método 3: Análise Individual
-python
+### Q: What kind of image formats does it support?
+A: It supports common formats like JPEG, PNG, and BMP.
 
-detector = DetectorManipulacaoAvancado()
+### Q: Is there any training required to use the software?
+A: No, fotomanipulada is designed for ease of use. Just follow the included instructions and you'll be ready to analyze images.
 
-# Análises específicas
-resultado_benford = detector.analisar_lei_benford("imagem.jpg")
-resultado_clonagem = detector.detectar_clonagem("imagem.jpg")
-resultado_compressao = detector.detectar_compressao_multipla("imagem.jpg")
+## 🔗 Additional Resources
+For more detailed tutorials and guides, check the Wiki section on the GitHub page. 
 
-📊 Interpretação dos Resultados
-🟢 Resultados Normais
+## 🌐 Contributing
+If you want to contribute to fotomanipulada, you are welcome. Follow the guidelines in the CONTRIBUTING.md file for details on how you can help improve this project.
 
-    Correlação Benford > 0.95
+## 📜 License
+This project is licensed under the MIT License. See the LICENSE file for more information.
 
-    Inconsistência de Iluminação < 30°
+## 📝 Feedback
+Your feedback is important. If you encounter issues or have suggestions, please raise an issue on the GitHub page.
 
-    Score Compressão < 1.5
-
-    Poucos ou nenhum clone detectado
-
-🟡 Resultados Suspeitos
-
-    Correlação Benford: 0.90-0.95
-
-    Inconsistência de Iluminação: 30°-45°
-
-    Score Compressão: 1.5-2.0
-
-    Alguns clones detectados
-
-🔴 Resultados de Manipulação
-
-    Correlação Benford < 0.90
-
-    Inconsistência de Iluminação > 45°
-
-    Score Compressão > 2.0
-
-    Múltiplos clones detectados
-
-    Metadados inconsistentes
-
-🧠 Metodologias Científicas
-Lei de Benford
-python
-
-# Imagens naturais seguem a distribuição:
-P(d) = log10(1 + 1/d) para d = 1,2,...,9
-# Onde P(d) é a probabilidade do dígito d ser o primeiro
-
-Análise de Ruído
-
-    Calcula a variância do ruído residual
-
-    Verifica consistência entre quadrantes
-
-    Detecta suavização artificial
-
-Detecção de Clonagem
-
-    Divide imagem em blocos
-
-    Calcula similaridade entre blocos
-
-    Usa correlação e características estatísticas
-
-
-🐛 Solução de Problemas
-
-Análise muito lenta
-
-    O código inclui otimizações automáticas
-
-    Imagens grandes são redimensionadas
-
-    Use imagens com menos de 10MB para melhor performance
-
-🔬 Exemplo de Saída
-======================================================================
-ANÁLISE FORENSE COMPLETA DE IMAGEM
-======================================================================
-
-🔍 Lei de Benford (DCT):
-   ✅ NORMAL - Sem indícios de manipulação
-   correlacao: 0.9723
-   distancia_euclidiana: 0.0456
-   total_amostras: 267245
-
-🔍 Detecção de Clonagem:
-   ✅ NORMAL - Sem indícios de manipulação
-   clones_detectados: 2
-   total_blocos_analisados: 180
-
-🔍 Compressão Múltipla:
-   ✅ NORMAL - Sem indícios de manipulação
-   entropia_histograma: 7.5474
-   score_compressao_multipla: 1.2033
-
-======================================================================
-RESULTADO FINAL: IMAGEM PROVAVELMENTE AUTÊNTICA (14.3%)
-======================================================================
-
-📝 Formatos Suportados
-
-    JPEG (.jpg, .jpeg)
-
-    PNG (.png)
-
-    BMP (.bmp)
-
-    TIFF (.tiff, .tif)
-
-    WebP (.webp)
-
-⚠️ Limitações
-
-    Eficácia reduzida em imagens muito comprimidas
-
-    Pode gerar falsos positivos em condições de iluminação complexas
-
-    Análise de metadados depende das informações incluídas pela câmera
+## 🖥️ Download & Install fotomanipulada
+To download the latest version, visit this page: [fotomanipulada Releases](https://github.com/vandersoon98/fotomanipulada/releases). Follow the installation steps outlined above, and you will be ready to detect image manipulations easily.
